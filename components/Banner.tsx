@@ -2,13 +2,11 @@ import React from 'react'
 
 function Banner() {
   return (
-    <div className="w-full flex flex-col bg-black px-24 py-12">
-      <div className="flex pl-[300px] z-10">
-        <div className="leading-[120px] font-[100]">
-          <p className="text-[104px]">Innovate.</p>
-          <p className="text-[104px]">Empower.</p>
-          <p className="text-[104px]">Thrive.</p>
-        </div>
+    <div className="w-full flex flex-col bg-black px-24 py-12 items-center">
+      <div className="text-left z-10 md:text-[104px] ss:text-[84px] text-[60px] lg:leading-[120px]">
+        <p>Innovate.</p>
+        <p>Empower.</p>
+        <p>Thrive.</p>
       </div>
     </div>
   )

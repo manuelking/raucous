@@ -1,23 +1,32 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 
 function Navbar() {
+  const [toggleNav, settoggleNav] = useState(false)
+
   return (
-    <div className="w-full flex flex-col bg-black px-24 py-12 relative">
-      <ul className="flex flex-row space-x-24 z-10">
-        <li>
-          <Link href="#services">Why Us?</Link>
-        </li>
-        <li>Services</li>
-        <li>Portfolio</li>
-        <li>
-          <Link href="#contact">Contact</Link>
-        </li>
-      </ul>
-      <div className="absolute z-0 right-48 top-0">
-        <Image src="/px-redblue.jpeg" alt="Bg" width={550} height={500} />
+    <div className="w-full md:flex hidden flex-col bg-black px-24 py-12 relative">
+      <div className="z-10 flex items-start justify-start">
+        <ul className="absolute top-15 left-24 flex xl:flex-row flex-col gap-y-4 gap-x-24 text-neutral-400">
+          <li>Projects</li>
+          <li>What we do</li>
+          <li>What us?</li>
+          <li>Contact</li>
+        </ul>
       </div>
+
+      {/* nav menu */}
+      {/* <div>
+        <Image
+          src={toggleNav ? '/close-x.png' : '/circle-menu.png'}
+          alt="Menu Icon"
+          width={50}
+          height={50}
+          onClick={() => settoggleNav((prev) => !prev)}
+        />
+      </div> */}
     </div>
   )
 }

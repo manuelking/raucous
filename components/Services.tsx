@@ -5,18 +5,23 @@ function Services() {
   return (
     <div
       id="services"
-      className="w-full flex flex-col bg-black px-24 py-12 relative"
+      className="w-full flex flex-col bg-black sm:px-24 px-12 py-12 relative"
     >
-      <div className="flex flex-row space-x-10">
+      <div className="flex flex-row xs:space-x-10 space-x-4">
         <Image src="/transcube.svg" alt="arrow" width={40} height={40} />
-        <h1 className="font-medium text-[64px]">Our Expertise</h1>
+        <h1 className="font-medium sm:text-[64px] xs:text-[44px] text-[34px]">
+          Our Expertise
+        </h1>
       </div>
       <div className="grid divide-y divide-neutral-600 max-w-2xl mx-auto mt-8 w-full">
         <div className="py-8">
           <details className="group">
             <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-              <span className="text-[20px]">Customized Web Development</span>
-              <span className="transition group-open:rotate-180">
+              <span className="sm:text-[20px]">Customized Web Development</span>
+              <span
+                className="transition group-open:rotate-180"
+                style={{ minWidth: '40px' }}
+              >
                 <Image src="/faqarrow.svg" alt="arrow" width={40} height={40} />
               </span>
             </summary>
@@ -32,17 +37,22 @@ function Services() {
 
         <div className="py-8">
           <details className="group">
-            <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
+            <summary className="flex justify-between items-center font-medium cursor-pointer list-none gap-x-4">
               <div className="flex flex-row space-x-3">
-                <span className="text-[20px]">AI-Powered Solutions</span>
-                <Image
-                  src="/sparkles.svg"
-                  alt="Sparkle"
-                  width={25}
-                  height={25}
-                />
+                <span className="sm:text-[20px]">
+                  AI-Powered Solutions
+                  <Image
+                    src="/sparkles.svg"
+                    alt="Sparkle"
+                    width={25}
+                    height={25}
+                  />
+                </span>
               </div>
-              <span className="transition group-open:rotate-180">
+              <span
+                className="transition group-open:rotate-180"
+                style={{ minWidth: '40px' }}
+              >
                 <Image src="/faqarrow.svg" alt="Arrow" width={40} height={40} />
               </span>
             </summary>
@@ -58,9 +68,12 @@ function Services() {
         </div>
         <div className="py-8">
           <details className="group">
-            <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-              <span className="text-[20px]">E-commerce Solutions</span>
-              <span className="transition group-open:rotate-180">
+            <summary className="flex justify-between items-center font-medium cursor-pointer list-none gap-x-4">
+              <span className="sm:text-[20px]">E-commerce Solutions</span>
+              <span
+                className="transition group-open:rotate-180"
+                style={{ minWidth: '40px' }}
+              >
                 <Image src="/faqarrow.svg" alt="arrow" width={40} height={40} />
               </span>
             </summary>
@@ -77,8 +90,11 @@ function Services() {
         <div className="py-8">
           <details className="group">
             <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-              <span className="text-[20px]">Responsive Design</span>
-              <span className="transition group-open:rotate-180">
+              <span className="sm:text-[20px]">Responsive Design</span>
+              <span
+                className="transition group-open:rotate-180"
+                style={{ minWidth: '40px' }}
+              >
                 <Image src="/faqarrow.svg" alt="arrow" width={40} height={40} />
               </span>
             </summary>
@@ -95,10 +111,13 @@ function Services() {
         <div className="py-8">
           <details className="group">
             <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-              <span className="text-[20px]">
+              <span className="sm:text-[20px]">
                 User-Friendly Content Management System (CMS)
               </span>
-              <span className="transition group-open:rotate-180">
+              <span
+                className="transition group-open:rotate-180"
+                style={{ minWidth: '40px' }}
+              >
                 <Image src="/faqarrow.svg" alt="arrow" width={40} height={40} />
               </span>
             </summary>
@@ -115,10 +134,13 @@ function Services() {
         <div className="py-8">
           <details className="group">
             <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-              <span className="text-[20px]">
+              <span className="sm:text-[20px]">
                 Search Engine Optimization (SEO) Friendly
               </span>
-              <span className="transition group-open:rotate-180">
+              <span
+                className="transition group-open:rotate-180"
+                style={{ minWidth: '40px' }}
+              >
                 <Image src="/faqarrow.svg" alt="arrow" width={40} height={40} />
               </span>
             </summary>
@@ -137,10 +159,13 @@ function Services() {
         <div className="py-8">
           <details className="group">
             <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-              <span className="text-[20px]">
+              <span className="sm:text-[20px]">
                 Ongoing Support and Maintenance
               </span>
-              <span className="transition group-open:rotate-180">
+              <span
+                className="transition group-open:rotate-180"
+                style={{ minWidth: '40px' }}
+              >
                 <Image src="/faqarrow.svg" alt="arrow" width={40} height={40} />
               </span>
             </summary>

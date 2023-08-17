@@ -55,15 +55,19 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="w-full flex flex-col bg-black px-24 py-12 relative"
+      className="w-full flex flex-col bg-black sm:px-24 px-12 py-12 relative"
     >
       <div className="flex flex-row gap-x-10">
         <div className="flex items-center">
           <Image src="/plane.svg" alt="Plane" width={40} height={40} />
         </div>
         <div>
-          <p>Tell us about your project</p>
-          <h1 className="font-medium text-[64px]">Get in Touch</h1>
+          <p className="sm:text-[16px] text-[12px]">
+            Tell us about your project
+          </p>
+          <h1 className="font-medium sm:text-[64px] xs:text-[44px] text-[34px]">
+            Get in Touch
+          </h1>
         </div>
       </div>
       {sent ? (
@@ -77,7 +81,7 @@ function Contact() {
         <form
           ref={form}
           onSubmit={handleSubmit(onSubmit)}
-          className="grid grid-cols-1 gap-6 mt-8 max-w-2xl mx-auto w-full"
+          className="grid grid-cols-1 gap-6 mt-8 max-w-2xl mx-auto w-full ll:pb-0 pb-24"
         >
           <input
             type="text"

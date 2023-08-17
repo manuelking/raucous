@@ -21,13 +21,26 @@ export default function Home() {
       <Navbar />
       {/* HERO BANNER */}
       <Banner />
-      {/* BLURB */}
+      <div
+        className="absolute z-0 sm:right-48 right-10 top-0 mx-auto px-20"
+        style={{ minWidth: '550px' }}
+      >
+        <Image
+          src="/px-redblue.jpeg"
+          alt="Bg"
+          width={550}
+          height={500}
+          className="w-full"
+        />
+      </div>
+
+      {/* BLURB -responsive*/}
       <Blurb />
-      {/* SERVICES */}
+      {/* SERVICES -responsive(check drop arrows resizing) */}
       <Services />
       {/* GAP */}
       <div className="p-36" />
-      {/* EXPERIENCE */}
+      {/* EXPERIENCE -responsive */}
       <Experience />
       {/* CONTACT */}
       <Contact />
